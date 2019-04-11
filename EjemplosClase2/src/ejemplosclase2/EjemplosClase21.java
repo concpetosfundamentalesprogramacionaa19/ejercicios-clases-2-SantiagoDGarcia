@@ -26,13 +26,13 @@ public class EjemplosClase21 {
         
         nombre = entrada.nextLine();
         System.out.println(nombre);
-        /**
-        System.out.println("Por favor ingresar su Apellido:");
-        apellido = entrada.next();
+        
+        System.out.println("Por favor ingresar sus Apellidos:");
+        apellido = entrada.nextLine();
         
         System.out.println("Su nombre es: "+nombre+"\n\n\t"+"Su apellido es: "
                 +apellido);
-        */
+        
     }
     
 }
