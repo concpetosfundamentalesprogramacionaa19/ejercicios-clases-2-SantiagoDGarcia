@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author Salas
  */
-public class EjemplosClase22 {
+public class EjemplosClase23 {
 
     /**
      * @param args the command line arguments
@@ -40,9 +40,12 @@ public class EjemplosClase22 {
         entrada.nextLine(); //limpieza del buffer de entrada de datos
         System.out.println("Por favor ingresar su Ciudad:");
         ciudad = entrada.nextLine();
+       
+        //System.out.println("Su nombre es: "+nombre+"\n\n\t"+"Su apellido es: "
+              //  +apellido+ ", edad: "+edad+"\nCiudad:  "+ciudad);
         
-        System.out.println("Su nombre es: "+nombre+"\n\n\t"+"Su apellido es: "
-                +apellido+ ", edad: "+edad+"\nCiudad:"+ciudad);
+        System.out.printf("Su nombre es %s\n\n\t Su apellido es %s "
+                + "edad: %s\n Ciudad: %s",nombre, apellido,edad,ciudad);
     }
     
 }

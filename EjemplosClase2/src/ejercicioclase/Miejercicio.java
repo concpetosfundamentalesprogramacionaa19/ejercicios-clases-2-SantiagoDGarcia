@@ -1,29 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package ejemplosclase2;
-import java.util.Scanner;
-/**
- *
- * @author Salas
- */
-public class EjemplosClase22 {
 
-    /**
-     * @param args the command line arguments
-     */
+package ejercicioclase;
+import java.util.Scanner;
+
+public class Miejercicio {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         
         String nombre;
         String apellido;
-        int edad;
-        String ciudad;
+        int edad, nota1, nota2;
+        float prom;
+        String ciudad,pais;
         Scanner entrada = new Scanner(System.in);
-        
-        
         
         
         System.out.println("Por favor ingresar sus Nombres:");
@@ -38,11 +27,24 @@ public class EjemplosClase22 {
         edad = entrada.nextInt();
         
         entrada.nextLine(); //limpieza del buffer de entrada de datos
+        
         System.out.println("Por favor ingresar su Ciudad:");
         ciudad = entrada.nextLine();
         
-        System.out.println("Su nombre es: "+nombre+"\n\n\t"+"Su apellido es: "
-                +apellido+ ", edad: "+edad+"\nCiudad:"+ciudad);
-    }
+        System.out.println("Por favor ingresar su Pais:");
+        pais = entrada.nextLine();
+       
+       System.out.println("Por favor ingresar sus Notas:\nnota 1:");
+        nota1 = entrada.nextInt();
+        
+        System.out.println("nota 2:");
+        nota2 = entrada.nextInt();
+        
+        prom = (nota1+nota2)/2;
+        
+        System.out.printf("Sus nombres y apellidos: %s %s\nEdad: %s\n"
+                + "Ciudad: %s\nPais: %s\nNotas: %s, %s\nPromedio: %s"
+                ,nombre,apellido,edad,ciudad,pais,nota1,nota2,prom);
+         }
     
 }
